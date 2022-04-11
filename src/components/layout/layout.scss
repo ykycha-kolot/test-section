@@ -1,0 +1,21 @@
+.layout-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0fr 1fr; 
+  gap: 0px 0px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media (max-width: 882px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr 1fr ;
+    padding: 0 16px;
+    max-width: 100%;
+  }
+  @media (max-width: 525px) {
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
